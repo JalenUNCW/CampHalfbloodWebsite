@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise</title>
+    <link rel="icon" href="../images/CHBLogo.png">
+    <link rel="stylesheet" href="../style/main.css">
+    <style>
+        .grid-container{display: grid; grid-template-rows: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: .5rem}
+        .grid-container div:nth-child(3){grid-column: 1/3; width: 50%; margin: 0 auto; padding-bottom: 1rem;}
+        .grid-container img{width: 100%; display: block; margin: 0 auto;}
+        div{margin: 0; padding: 0;}
+        figure{margin: 0; padding: 0; border: solid 2px black;}
+    </style>
+</head>
+<body>
+    <header>
+            <img src="../images/CHBLogo.png" alt="Camp Half-blood Logo">
+            <h2>Camp Half-blood</h2>
+        </header>
+        <!--Nav Section-->
+        <nav>
+            <ul>
+                <li><a href="../index.html" >Home</a></li>
+                <li><a href="../campGround/index.html">Camp Ground</a></li>
+                <li><a href="index.html" id="current">Merch &#9660;</a>
+                    <ul>
+                        <li><a href="clothes/index.html">Clothes</a></li>
+                        <li><a href="enchanted/index.html">Enchanted Items</a></li>
+                        <li><a href="gear/index.html">Gear</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about/index.html">About &#9660;</a>
+                    <ul>
+                        <li><a href="../about/join/index.html">Join Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <main>
+        <!--First Section-->
+        <section>
+            <h1>Shop Items</h1>
+            <div class="grid-container">
+                <div>
+                    <figure>
+                        <a href="clothes/index.html"><img src="../images/StoreImages/clothesStore.jpg" alt="Clothes Store"></a>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <a href="enchanted/index.html"><img src="../images/StoreImages/enchantedItemsStore.jpg" alt="Enchanted Items Store"></a>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <a href="gear/index.html"><img src="../images/StoreImages/gearStoreLogo.jpg" alt="Gear Store"></a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

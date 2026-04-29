@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Join Camp Half-Blood</title>
+        <link rel="stylesheet" href="../../style/email.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    </head>
+    <!--Jalen Alston-->
+    <body>
+        <header>
+            <img src="../../images/CHBLogo.png" alt="Camp Half-blood Logo">
+            <h2>Camp Half-blood</h2>
+        </header>
+        <!--Nav Section-->
+        <nav>
+            <ul>
+                <li><a href="../../index.html" >Home</a></li>
+                <li><a href="../../campGround/index.html" >Camp Ground</a></li>
+                <li><a href="../../merch/index.html" >Merch &#9660;</a>
+                    <ul>
+                        <li><a href="../../merch/clothes/index.html">Clothes</a></li>
+                        <li><a href="../../merch/enchanted/index.html">Enchanted Items</a></li>
+                        <li><a href="../../merch/gear/index.html">Gear</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html" id="current">About &#9660;</a>
+                    <ul>
+                        <li><a href="index.html">Join Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Main-->
+        <main>
+            <!--First Section-->
+            <section>
+                <h1>Register to Join Camp Half-blood</h1>
+                <form name="input" action="confirmation.html" method="get">
+                    <label for="firstname">First Name: </label><br>
+                    <input type="text" name="firstname" id="firstname" autofocus required><br>
+
+                    <label for="lastname">Last Name: </label><br>
+                    <input type="text" name="lastname" id="lastname" required><br>
+
+                    <label for="age">Age: </label><br>
+                    <input type="text" name="age" id="age" placeholder="Enter Age" required><br>
+
+                    <label for="parent">Godly Parent: </label><br>
+                    <select name="parent" id="parent" required>
+                        <!--Looked up how to pick a placeholder for the DDL -->
+                        <option value="" disabled selected hidden>Pick your Parent</option>
+                        <option value="zeus">Zeus: King of the Gods</option>
+                        <option value="poseidon">Poseidon: God of the Sea</option>
+                        <option value="hades">Hades: God of the Underworld</option>
+                        <option value="apollo">Apollo: God of the Sun </option>
+                        <option value="dionysus">Dionysus: God of Wine</option>
+                        <option value="athena">Athena: Goddess of Wisdom</option>
+                        <option value="ares">Ares: God of War</option>
+                        <option value="aphrodite">Aphrodite: Goddess of Love</option>
+                        <option value="hephaestus">Hephaestus: God of the Forge </option>
+                        <option value="artemis">Artemis: Goddess of the Hunt</option>
+                        <option value="hermes">Hermes: God of Travelers</option>
+                        <option value="demeter">Demeter: Goddess of Agriculture</option>
+                        <option value="unknown">Unknown/Unclaimed</option>
+                    </select><br>
+
+
+                    <label for="ability">Special Abilities: </label><br>
+                    <textarea name="ability" id="ability" rows="2" cols="5" placeholder="Describe your abilities"></textarea><br>
+
+                    <label for="weapon">Weapon Preference: </label><br>
+                    <select name="weapon" id="weapon" required>
+                        <!--Looked up how to pick a placeholder for the DDL -->
+                        <option value="" disabled selected hidden>Select Weapon</option>
+                        <option value="sword">Sword</option>
+                        <option value="spear">Spear</option>
+                        <option value="bow">Bow and Arrow</option>
+                        <option value="shield">Shield and Javilin</option>
+                        <option value="dagger">Dagger</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="submit" name="button" id="button" value="Join Camp Half-blood">
+                </form>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <p>Long Island, NY USA 11954</p>
+            &copy;Jalen Alston
+        </footer>
+    </body>
+</html>

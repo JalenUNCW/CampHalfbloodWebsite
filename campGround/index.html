@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Grounds</title>
+    <link rel="icon" href="../images/CHBLogo.png">
+    <link rel="stylesheet" href="../style/main.css">
+    <style>
+        section:last-of-type img{width: 30%; height: 40%; margin: 0 auto; display: block;}
+        section:first-of-type img{width: 45%; height: auto; margin: 0 auto; display: block;}
+        .gallery{display: flex; gap: .625rem; flex-wrap: wrap;}
+        .gallery img{width: 9.375rem; cursor: pointer; transition: .3s;}
+        .gallery img:hover{transform: scale(1.05);}
+        .model{display: none; position: relative; z-index: 1000; padding-top: 0; padding-bottom: 10px; margin-top: 0; left: 0; top: 0; width: 100%; height: auto;}
+        .model-content{display: block; margin: auto; max-width: 80%; max-height: 80%; border-radius: .625rem;}
+        #closeBtn{position: relative; top: 2.5rem; right:3.75rem; color: wheat; font-size: 3.125rem; cursor: pointer;}
+        h3:first-of-type{text-align: center; border-top: solid 3px black;}
+        h3:last-of-type{text-align: center;padding-bottom: 0; margin-bottom: 0;}
+        div:last-of-type{margin-top: 0; padding-top: 0;}
+    </style>
+</head>
+<body>
+    <header>
+            <img src="../images/CHBLogo.png" alt="Camp Half-blood Logo">
+            <h2>Camp Half-blood</h2>
+        </header>
+        <!--Nav Section-->
+        <nav>
+            <ul>
+                <li><a href="../index.html" >Home</a></li>
+                <li><a href="index.html" id="current">Camp Ground</a></li>
+                <li><a href="../merch/index.html" >Merch &#9660;</a>
+                    <ul>
+                        <li><a href="../merch/clothes/index.html">Clothes</a></li>
+                        <li><a href="../merch/enchanted/index.html">Enchanted Items</a></li>
+                        <li><a href="../merch/gear/index.html">Gear</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about/index.html">About &#9660;</a>
+                    <ul>
+                        <li><a href="../about/join/index.html">Join Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <main>
+        <!--First Section-->
+        <section>
+            <h1>Map of Camp Half-blood</h1>
+            <img src="../images/Locations/CampHalfBlood.jpg" alt="Camp Map">
+        </section>
+        <!--Last Section-->
+        <section>
+            <h3>Location Views</h3>
+            <div class="gallery">
+                <img src="../images/Locations/armory.jpg" alt="Armory">
+                <img src="../images/Locations/arena.jpg" alt="Arena">
+                <img src="../images/Locations/bigHouse.jpg" alt="Big House">
+                <img src="../images/Locations/cabins.jpg" alt="Cabins">
+                <img src="../images/Locations/messHall.jpg" alt="Mess Hall">
+                <img src="../images/Locations/stables.jpg" alt="Stables">
+            </div>
+            <h3 id="modelDesc"></h3>
+            <div id="model" class="model">
+                <span id="closeBtn">&times;</span>
+                <img id="modelImg" class="model-content">
+            </div>
+        </section>
+    </main>
+    <script src="../script/camp.js"></script>
+</body>
+</html>

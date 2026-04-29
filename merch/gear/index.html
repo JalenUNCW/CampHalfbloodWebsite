@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Gear Store</title>
+        <link rel="stylesheet" href="../../style/main.css">
+        <link rel="stylesheet" href="../../style/merch.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    </head>
+    <!--Jalen Alston-->
+    <body>
+        <header>
+            <img src="../../images/CHBLogo.png" alt="Camp Half-blood Logo">
+            <h2>Camp Half-blood</h2>
+        </header>
+        <!--Nav Section-->
+        <nav>
+            <ul>
+                <li><a href="../../index.html" >Home</a></li>
+                <li><a href="../../campGround/index.html" >Camp Ground</a></li>
+                <li><a href="../index.html" >Merch &#9660;</a>
+                    <ul>
+                        <li><a href="../clothes/index.html">Clothes</a></li>
+                        <li><a href="../enchanted/index.html">Enchanted Items</a></li>
+                        <li><a href="index.html" id="current">Gear</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../about/index.html">About &#9660;</a>
+                    <ul>
+                        <li><a href="../../about/join/index.html">Join Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Main-->
+        <main>
+            <form id="order_form" action="../purchase.html" method="get">
+            <!--First Section-->
+            <h1>Gear Store</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Image</th>
+                            <th>Add To Cart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="item">Bow and Arrow</td>
+                            <td>Basic Bow and Arrow great for long range strikes against formidable opponents</td>
+                            <td class="price">80.00</td>
+                            <td><img src="../../images/StoreImages/GearItems/bowArrow.jpg" alt="bowArrow"></td>
+                            <td><input type="button" name="add_cart" class="add_cart" value="Add to Cart"></td>
+                        </tr>
+                        <tr>
+                            <td class="item">Basic Shield</td>
+                            <td>Standard shield that grants the wearer small amounts of protection</td>
+                            <td class="price">70.00</td>
+                            <td><img src="../../images/StoreImages/GearItems/shield.jpg" alt="Sheild"></td>
+                            <td><input type="button" name="add_cart" class="add_cart" value="Add to Cart"></td>
+                        </tr>
+                        <tr>
+                            <td class="item">Javelin</td>
+                            <td>Multi-purpose item great for long and short range attacks</td>
+                            <td class="price">100.00</td>
+                            <td><img src="../../images/StoreImages/GearItems/spear.jpg" alt="Javelin"></td>
+                            <td><input type="button" name="add_cart" class="add_cart" value="Add to Cart"></td>
+                        </tr>
+                        <tr>
+                            <td class="item">Greek Sword</td>
+                            <td>For those warriors that like to get up close and personal</td>
+                            <td class="price">130.00</td>
+                            <td><img src="../../images/StoreImages/GearItems/sword.jpg" alt="Sword"></td>
+                            <td><input type="button" name="add_cart" class="add_cart" value="Add to Cart"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            <!--Second Section-->
+            <section>
+                <h2>Checkout</h2>
+                <section>
+                    <select id="order" name="order" size="6"></select>
+            		<p id="total"></p>
+                </section>
+                <section id="buttons">
+           			<input type="button" name="place_order" id="place_order" value="Place Order">
+           			<input type="button" name="clear_order" id="clear_order" value="Clear Order">				            		
+            	</section>
+            </section>
+            </form>
+            <script src="../../script/order.js"></script>
+        </main>
+        <hr>
+        <footer>
+            <p>Long Island, NY USA 11954</p>
+            &copy;Jalen Alston
+        </footer>
+    </body>
+</html>

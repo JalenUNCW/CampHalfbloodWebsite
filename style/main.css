@@ -1,0 +1,187 @@
+html{
+    background: black url(../images/mountOlympus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+}
+header img {
+    width: 100%;
+    max-width: 5.1rem;
+    min-width: 2.8125rem;
+    float: left;
+    margin: 0 0 0 35%;
+    padding: 5px 25px 0;
+}
+header h2{
+    clear: none;
+    text-align: center;
+    margin-top: auto;
+}
+nav ul{
+    position: relative;
+    padding: 0;
+}
+nav ul{
+    margin: 0;
+    display: flex;
+    background-color: black;
+    & li{
+        flex-basis: 25%;
+        list-style: none;
+        text-align: center;
+        position: relative;
+        & ul {
+            width: 100%;
+        }
+        & a{
+            display: block;
+            text-decoration: none;
+            padding: 5px 0;
+            color: orange;
+            font-family: 'Fjalla', sans-serif;
+        }
+        & #current{
+            color: white;
+        }
+    }
+}
+nav ul ul{
+    position: absolute;
+    display: none;
+}
+nav ul li:hover ul, nav ul li:focus ul{
+    display: block;
+    background-color: black;
+
+}
+nav ul li a:hover, nav ul li a:focus{
+    background: gray;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 70%;
+    max-width: 1000px;
+    border: solid black .19rem;
+    margin: .63rem auto;
+    box-shadow: wheat .63rem .38rem .63rem .13rem;
+    background-color: wheat;
+    min-width: min-content;
+}
+h1{
+    border-top: 5px solid black;
+    text-align: center;
+}
+section:first-of-type{
+    flex-basis: 40%;
+    padding: 0 10px;
+
+}
+section:nth-of-type(2) {
+    flex-basis: 60%;
+    padding: 0 10px;
+}
+h4 {
+    align-self: center;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    margin-top: 11px;
+}
+aside p {
+    padding-right: 10px;
+}
+aside p:last-of-type{
+    border-bottom: 5px solid black ;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+aside h3, aside p{
+    text-align: center;
+}
+aside h3{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+aside ul{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+aside li{
+    flex-basis: 31%;
+    display: flex;
+    list-style: none;
+    position: relative;
+    padding-right: 5px;
+    & img {
+        width: 60%;
+        height: 120px;
+        object-fit: cover;
+        justify-content: space-between;
+        min-width: 5.75rem;
+    }
+}
+aside figure{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 5px;
+    margin: auto;
+}
+figcaption{
+    text-align: center;
+    font-size: .85rem;
+}
+hr:last-of-type{
+    margin-top: 0;
+}
+footer{
+    text-align: center;
+    margin-bottom: 15px;
+    & p {
+        margin-bottom: auto;
+    }
+}
+/*Media Query*/
+@media screen and (max-width: 420px) {
+    html{
+        background-image: none;
+
+    }
+    & main{
+        flex-direction: row;
+    }
+    header{
+        background-color: black;
+    }
+    header h2{
+        display: none;
+    }
+    & body{
+        width: 100%;
+        box-shadow: none;
+        border: none;
+    }
+    & nav ul{
+        display: block;
+        flex-direction: column;
+        background-color: gray;
+        width: 30%;
+    }
+    nav ul li{
+        text-align: left;
+    }
+    & nav ul ul{
+        position: relative;
+        & li{
+            background-color: gray;
+        }
+    }
+    footer, hr{
+        display: none;
+    }
+}

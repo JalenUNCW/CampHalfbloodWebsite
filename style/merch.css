@@ -1,0 +1,35 @@
+table thead{
+    text-align: center;
+}
+table td{
+    text-align: center; 
+    width: 27%;}
+table img{
+    width: 100%;
+}
+h2{
+    text-align: center;
+}
+section section:last-of-type{
+    text-align: center; 
+    width: 50%; 
+    margin: 0 auto;
+}
+section select{ 
+    width: 40%;
+}
+section section:first-of-type{
+    margin: 0 auto; 
+    text-align: center;
+}
+table input[type="button"]{
+    background-color: black;
+    color: white;
+    border: black 2px solid;
+    width: 100%;
+}
+section section:last-of-type input[type="button"]{
+    width: 70%;
+    background-color: black;
+    color: white;
+}

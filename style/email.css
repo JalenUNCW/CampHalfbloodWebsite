@@ -1,0 +1,109 @@
+html{
+    background: black url(../images/mountOlympus.jpg);
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+}
+header img {
+    width: 100%;
+    max-width: 85px;
+    min-width: 45px;
+    float: left;
+    margin: 0 0 0 35%;
+    padding: 5px 25px 0;
+}
+header h2{
+    clear: none;
+    text-align: center;
+    margin-top: auto;
+}
+nav ul{
+    position: relative;
+    padding: 0;
+}
+nav ul{
+    margin: 0;
+    display: flex;
+    background-color: black;
+    & li{
+        flex-basis: 25%;
+        list-style: none;
+        text-align: center;
+        position: relative;
+        & ul {
+            width: 100%;
+        }
+        & a{
+            display: block;
+            text-decoration: none;
+            padding: 5px 0;
+            color: orange;
+            font-family: 'Fjalla', sans-serif;
+        }
+        & #current{
+            color: white;
+        }
+    }
+}
+nav ul ul{
+    position: absolute;
+    display: none;
+}
+nav ul li:hover ul, nav ul li:focus ul{
+    display: block;
+    background-color: black;
+
+}
+nav ul li a:hover, nav ul li a:focus{
+    background: gray;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 70%;
+    max-width: 1000px;
+    border: solid black .19rem;
+    margin: .63rem auto;
+    box-shadow: wheat .63rem .38rem .63rem .13rem;
+    background-color: wheat;
+    min-width: min-content;
+}
+h1{
+    text-align: center;
+}
+section{
+    border-top: 5px solid black;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+    background-color: black;
+    padding: 40px 40px 40px 30px;
+    border-radius: 15px;
+    border: 3px orange solid;
+}
+label{
+    color: wheat;
+}
+input, select, textarea{
+    width: 100%;
+    padding: 12px 12px;
+    font-size: 20px;
+    border: 2px white solid;
+    border-radius: 8px;
+}
+select option{
+    color: black;
+    width: 100%;
+}
+#button{
+    background-color: orange;
+    border-color: black;
+}
+footer{
+    text-align: center;
+    margin-bottom: 15px;
+    & p {
+        margin-bottom: auto;
+    }
+}

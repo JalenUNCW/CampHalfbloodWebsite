@@ -1,0 +1,13 @@
+html{
+    font-family: 'Times New Roman', Times, serif ;
+    background: none;
+}
+header, nav, footer{
+    display: none;
+}
+body{
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    
+}
